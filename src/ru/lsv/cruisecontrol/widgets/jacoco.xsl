@@ -61,7 +61,7 @@
 						<td class="jacoco-sectionheader">Class (cover / miss)</td>
 					</tr>
 					<xsl:for-each select="/cruisecontrol/report/group">
-						<xsl:sort select="name" />
+						<xsl:sort select="@name" />
 						<tr>
 							<td colspan="7" class="jacoco-fileheader">
 								<xsl:value-of select="@name" />
@@ -137,9 +137,10 @@
 							</xsl:for-each>
 						</td>
 						<xsl:for-each select="package">
+							<xsl:sort select="@name" />
 							<tr>
 								<td class="jacoco-fileheader">
-									&nbsp;&nbsp;&nbsp;Package 
+									&nbsp;&nbsp;&nbsp;Package
 									<xsl:value-of select="@name" />
 								</td>
 								<td class="jacoco-data">
@@ -210,6 +211,7 @@
 								</td>
 							</tr>
 							<xsl:for-each select="class">
+								<xsl:sort select="@name" />
 								<tr>
 									<td class="jacoco-fileheader">
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

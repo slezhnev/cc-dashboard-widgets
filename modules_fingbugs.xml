@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cruisecontrol>
+<BugCollection>
+  <file classname="ru.encotes.in5102.modules.common.SquaredEchoSignal">
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.common.SquaredEchoSignal(double[]) may expose internal representation by storing an externally mutable object into SquaredEchoSignal.signal" line="22"/>
+    <BugInstance type="EI_EXPOSE_REP" priority="Normal" message="EI: ru.encotes.in5102.modules.common.SquaredEchoSignal.get() may expose internal representation by returning SquaredEchoSignal.signal" line="31"/>
+  </file>
+  <file classname="ru.encotes.in5102.modules.common.AttenuationCurve">
+    <BugInstance type="EI_EXPOSE_REP" priority="Normal" message="EI: ru.encotes.in5102.modules.common.AttenuationCurve.get() may expose internal representation by returning AttenuationCurve.attCurve" line="30"/>
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.common.AttenuationCurve(double[]) may expose internal representation by storing an externally mutable object into AttenuationCurve.attCurve" line="21"/>
+  </file>
+  <file classname="ru.encotes.in5102.modules.common.PageC">
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.common.PageC(double[]) may expose internal representation by storing an externally mutable object into PageC.pagec" line="22"/>
+    <BugInstance type="EI_EXPOSE_REP" priority="Normal" message="EI: ru.encotes.in5102.modules.common.PageC.get() may expose internal representation by returning PageC.pagec" line="29"/>
+  </file>
+  <file classname="ru.encotes.in5102.modules.common.Surface">
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.common.Surface(double[][]) may expose internal representation by storing an externally mutable object into Surface.surf" line="22"/>
+    <BugInstance type="EI_EXPOSE_REP" priority="Normal" message="EI: ru.encotes.in5102.modules.common.Surface.get() may expose internal representation by returning Surface.surf" line="30"/>
+  </file>
+  <file classname="ru.encotes.in5102.modules.common.EchoSignal">
+    <BugInstance type="EI_EXPOSE_REP" priority="Normal" message="EI: ru.encotes.in5102.modules.common.EchoSignal.get() may expose internal representation by returning EchoSignal.signal" line="31"/>
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.common.EchoSignal(double[]) may expose internal representation by storing an externally mutable object into EchoSignal.signal" line="22"/>
+  </file>
+  <file classname="ru.encotes.in5102.modules.calcDelay.CalcDelay$FFTResult">
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.calcDelay.CalcDelay$FFTResult(double[][], double[][]) may expose internal representation by storing an externally mutable object into CalcDelay$FFTResult.dataI" line="388"/>
+    <BugInstance type="EI_EXPOSE_REP" priority="Normal" message="EI: ru.encotes.in5102.modules.calcDelay.CalcDelay$FFTResult.getDataI() may expose internal representation by returning CalcDelay$FFTResult.dataI" line="410"/>
+    <BugInstance type="EI_EXPOSE_REP" priority="Normal" message="EI: ru.encotes.in5102.modules.calcDelay.CalcDelay$FFTResult.getDataR() may expose internal representation by returning CalcDelay$FFTResult.dataR" line="395"/>
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: ru.encotes.in5102.modules.calcDelay.CalcDelay$FFTResult.setDataR(double[][]) may expose internal representation by storing an externally mutable object into CalcDelay$FFTResult.dataR" line="403"/>
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.calcDelay.CalcDelay$FFTResult(double[][], double[][]) may expose internal representation by storing an externally mutable object into CalcDelay$FFTResult.dataR" line="387"/>
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: ru.encotes.in5102.modules.calcDelay.CalcDelay$FFTResult.setDataI(double[][]) may expose internal representation by storing an externally mutable object into CalcDelay$FFTResult.dataI" line="418"/>
+  </file>
+  <file classname="ru.encotes.in5102.modules.common.ADCProbingSignal">
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.common.ADCProbingSignal(byte[]) may expose internal representation by storing an externally mutable object into ADCProbingSignal.signal" line="23"/>
+    <BugInstance type="EI_EXPOSE_REP" priority="Normal" message="EI: ru.encotes.in5102.modules.common.ADCProbingSignal.get() may expose internal representation by returning ADCProbingSignal.signal" line="32"/>
+  </file>
+  <file classname="ru.encotes.in5102.modules.calcDelay.CalcDelay$KotelnilovSignal2DExecuter">
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.calcDelay.CalcDelay$KotelnilovSignal2DExecuter(int, double[], double[], double[][], CalcDelay$SPoint, double[], double[], double[], double[]) may expose internal representation by storing an externally mutable object into CalcDelay$KotelnilovSignal2DExecuter.v1" line="745"/>
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.calcDelay.CalcDelay$KotelnilovSignal2DExecuter(int, double[], double[], double[][], CalcDelay$SPoint, double[], double[], double[], double[]) may expose internal representation by storing an externally mutable object into CalcDelay$KotelnilovSignal2DExecuter.aroundValues" line="748"/>
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.calcDelay.CalcDelay$KotelnilovSignal2DExecuter(int, double[], double[], double[][], CalcDelay$SPoint, double[], double[], double[], double[]) may expose internal representation by storing an externally mutable object into CalcDelay$KotelnilovSignal2DExecuter.binsPi2" line="744"/>
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.calcDelay.CalcDelay$KotelnilovSignal2DExecuter(int, double[], double[], double[][], CalcDelay$SPoint, double[], double[], double[], double[]) may expose internal representation by storing an externally mutable object into CalcDelay$KotelnilovSignal2DExecuter.extremum" line="740"/>
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.calcDelay.CalcDelay$KotelnilovSignal2DExecuter(int, double[], double[], double[][], CalcDelay$SPoint, double[], double[], double[], double[]) may expose internal representation by storing an externally mutable object into CalcDelay$KotelnilovSignal2DExecuter.binsPi1" line="743"/>
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.calcDelay.CalcDelay$KotelnilovSignal2DExecuter(int, double[], double[], double[][], CalcDelay$SPoint, double[], double[], double[], double[]) may expose internal representation by storing an externally mutable object into CalcDelay$KotelnilovSignal2DExecuter.v2" line="746"/>
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.calcDelay.CalcDelay$KotelnilovSignal2DExecuter(int, double[], double[], double[][], CalcDelay$SPoint, double[], double[], double[], double[]) may expose internal representation by storing an externally mutable object into CalcDelay$KotelnilovSignal2DExecuter.signal2D" line="741"/>
+  </file>
+  <file classname="ru.encotes.in5102.modules.common.SignalEnvelope">
+    <BugInstance type="EI_EXPOSE_REP" priority="Normal" message="EI: ru.encotes.in5102.modules.common.SignalEnvelope.get() may expose internal representation by returning SignalEnvelope.signal" line="31"/>
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.common.SignalEnvelope(double[]) may expose internal representation by storing an externally mutable object into SignalEnvelope.signal" line="22"/>
+  </file>
+  <file classname="ru.encotes.in5102.modules.common.Sensor">
+    <BugInstance type="DM_BOOLEAN_CTOR" priority="Normal" message="Dm: ru.encotes.in5102.modules.common.Sensor.hashCode() invokes inefficient Boolean constructor; use Boolean.valueOf(...) instead" line="17"/>
+  </file>
+  <file classname="ru.encotes.in5102.modules.measurements.Measurements$ResonanceDeterminationResult">
+    <BugInstance type="EI_EXPOSE_REP2" priority="Normal" message="EI2: new ru.encotes.in5102.modules.measurements.Measurements$ResonanceDeterminationResult(double, int, double, double, double[]) may expose internal representation by storing an externally mutable object into Measurements$ResonanceDeterminationResult.vafc" line="395"/>
+    <BugInstance type="EI_EXPOSE_REP" priority="Normal" message="EI: ru.encotes.in5102.modules.measurements.Measurements$ResonanceDeterminationResult.getVafc() may expose internal representation by returning Measurements$ResonanceDeterminationResult.vafc" line="430"/>
+  </file>
+  <file classname="ru.encotes.in5102.modules.calcDelay.CalcDelay">
+    <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="Normal" message="RCN: Redundant nullcheck of nearestMax2D, which is known to be non-null in ru.encotes.in5102.modules.calcDelay.CalcDelay.calculateWP(CalcDelay$SPoint)" line="1311"/>
+    <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="Normal" message="RCN: Redundant nullcheck of nearestMax2D, which is known to be non-null in ru.encotes.in5102.modules.calcDelay.CalcDelay.calculateWP(CalcDelay$SPoint)" line="1299"/>
+    <BugInstance type="EI_EXPOSE_REP" priority="Normal" message="EI: ru.encotes.in5102.modules.calcDelay.CalcDelay.getPdSurfMaxIdx() may expose internal representation by returning CalcDelay.pdSurfMaxIdx" line="1437"/>
+    <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="Normal" message="ICAST: integral division result cast to double or float in ru.encotes.in5102.modules.calcDelay.CalcDelay.findLocalMax(double[][], CalcDelay$SPoint)" line="1032"/>
+  </file>
+  <file classname="ru.encotes.in5102.modules.measurements.Measurements$RunResult">
+    <BugInstance type="UWF_UNWRITTEN_FIELD" priority="Normal" message="UwF: Unwritten field: ru.encotes.in5102.modules.measurements.Measurements$RunResult.afc" line="107"/>
+  </file>
+  <file classname="ru.encotes.in5102.modules.measurements.Measurements">
+    <BugInstance type="URF_UNREAD_FIELD" priority="Normal" message="UrF: Unread field: ru.encotes.in5102.modules.measurements.Measurements.deviceAddress" line="143"/>
+  </file>
+  <Errors/>
+</BugCollection>
+</cruisecontrol>
