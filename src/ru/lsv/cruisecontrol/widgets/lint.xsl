@@ -8,7 +8,7 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 	<xsl:output method="html" />
 	<xsl:template match="/" mode="lint">
-		<xsl:if test="count(/cruisecontrol/BugCollection/file) > 0">
+		<xsl:if test="count(/cruisecontrol/issues/issue) > 0">
 			<style>
 				.lint-oddrow { background-color:#CCCCCC }
 				.lint-data {
