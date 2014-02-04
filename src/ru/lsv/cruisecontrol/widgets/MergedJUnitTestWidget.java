@@ -1,3 +1,7 @@
+/**
+ * Виджет для dashboard CruiseControl 2.8 для отображения результатов
+ * работы Lint (android static analyzer)
+ */
 package ru.lsv.cruisecontrol.widgets;
 
 import java.io.File;
@@ -15,12 +19,13 @@ import javax.xml.transform.stream.StreamSource;
 import net.sourceforge.cruisecontrol.dashboard.widgets.Widget;
 
 /**
- * Виджет для dashboard CruiseControl 2.8 для отображения результатов работы
- * Lint (android static analyzer)
+ * Виджет для dashboard CruiseControl 2.8 для отображения результатов тестов
+ * (идущий в комплекте - это угребище какое-то)
+ * 
  * 
  * @author s.lezhnev
  */
-public class MergedLintWidget implements Widget {
+public class MergedJUnitTestWidget implements Widget {
 
     /*
      * (non-Javadoc)
@@ -50,7 +55,7 @@ public class MergedLintWidget implements Widget {
         TransformerFactory tFactory = TransformerFactory.newInstance();
         try {
             InputStream xls = this.getClass().getResourceAsStream(
-                    "/ru/lsv/cruisecontrol/widgets/lint.xsl");
+                    "/ru/lsv/cruisecontrol/widgets/junittest.xsl");
             Transformer transformer = tFactory.newTransformer(new StreamSource(
                     xls));
             StreamSource xmlSource = new StreamSource(new FileInputStream(
@@ -72,7 +77,7 @@ public class MergedLintWidget implements Widget {
      */
     @Override
     public String getDisplayName() {
-        return "Merged Lint";
+        return "Merged tests";
     }
 
 }
